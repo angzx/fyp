@@ -1,0 +1,482 @@
+/*
+    header and overall css
+*/
+html,
+body {
+    height: 100%;
+   /* background-image: url("../../images/background-5.jpg");*/
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-color: rgb(204, 255, 255);
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto auto;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 10px 15px 0px;
+}
+
+#mainNav
+{
+    height: 50px;
+    width: 100%;
+}
+
+#mainNav li
+{
+    width: 16.66666667%;
+    text-align: center;
+}
+
+#w1
+{
+    height: 50px;
+    width: 100%;
+}
+
+#w1 li
+{
+    width: 16.66666667%;
+    text-align: center;
+}
+
+.btn-link
+{
+    font-weight: bold;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    clear: both;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+header
+{
+    background-image: url("/FYP/images/header.jpg");
+    background-color: #ffff99;
+    height: 100px;
+    width: 100%;
+    max-width: 100%;
+}
+
+header #staffLogo
+{
+    height: 80px;
+    width: 160px;
+    margin: 10px 10px;
+    float:left;
+}
+
+header #utarLogo
+{
+    height: 80px;
+    width: 160px;
+    margin: 10px 10px;
+    float:right;
+}
+
+header div
+{
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+
+
+/*
+    main menu css
+*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+    margin: auto;
+}
+
+.row {margin: auto;}
+
+#menu
+{
+    margin: 3% 1.5%;
+    width: 30%;
+    background-color: rgba(153, 153, 153, 0.8);
+    display: block;
+    -webkit-box-shadow: 0 0 7px black;
+    -moz-box-shadow: 0 0 7px black;
+    box-shadow: 0 0 7px black;
+}
+
+#menu h2
+{
+    font-weight: bold;
+    color: #0f0f0f;
+    text-align: center;
+}
+
+#menu p
+{
+    font-size: 120%;
+    text-align: justify;
+}
+
+#menu img
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-top: 10%;
+}
+
+.site-index
+{
+    background-color: transparent;
+    border-radius: 5%;
+}
+
+nav
+{
+    font-weight: bold;
+    font-size: 120%;
+}
+
+@media (max-width: 768px) {
+    header h1{display:none;}
+
+    #w0 li
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 100%;
+        height: 200px;
+        max-height: 200px;
+        margin: auto;
+    }
+}
+
+
+/*
+    birthday css
+*/
+#bdayWrapper h1,h3
+{
+    color: black;
+    font-weight: bold;
+}
+#staff
+{
+    background-color: transparent;
+}
+
+div#pic img
+{
+    width: 90px;
+}
+
+#bdayInfo
+{
+    height: 120px;
+    margin-top: 2%;
+}
+
+.row a:link
+{
+    color: black;
+}
+
+.row a:hover
+{
+    opacity: 0.8;
+    color: black;
+}
+
+.row a:visited
+{
+    color: black;
+}
+
+div #currentBdayStaff, #overallBday
+{
+    background-color: rgba(255,255,255, 0.6);
+}
+
+div #february,#march,#april,#may,#june,#july,#august,#september,#october,#november,#december
+{
+    display: none;
+}
+
+div#monthMenu
+{
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    div#pic img
+    {
+        width: 100px;
+        margin-left:auto;
+        margin-right:auto;
+        display: block;
+    }
+
+    #bdayInfo
+    {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*
+    contact css
+*/
+
+.site-contact h1, h5
+{
+    font-weight: bold;
+}
+
+
+/*
+    event css
+*/
+
+div#eventWrapper{
+    margin-bottom: 10px;
+}
+div#event1
+{
+    background-color: lightgrey;
+}
+
+div#date .row
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+div#date
+{
+    background-color: greenyellow;
+}
+
+div#date #day
+{
+    font-size:50px;
+    color: red;
+    height: 80px;
+}
+
+div#date #month
+ {
+     font-size:25px;
+     height: 50px;
+ }
+
+div#date #Days
+{
+    font-size:20px;
+    height: 50px;
+}
+
+#eventColumn
+{
+    background-color: lightgrey;
+}
+
+div#eventWrapper #eventName
+{
+    font-size:30px;
+    font-weight: bold;
+}
+
+div#eventWrapper #eventDesc
+{
+    font-size:15px;
+}
+
+div#eventWrapper h1
+{
+    font-weight: bold;
+}
+
+div#event1:hover
+{
+    -webkit-box-shadow: 0 0 15px black;
+    -moz-box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px black;
+}
+
+div#eventWrapper a
+{
+    color: black;
+}
+
+@media (max-width: 768px) {
+    div#eventWrapper a
+    {
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+/*
+    admin site css
+*/
+
+.sidebar-nav{
+    font-weight: bold;
+}
+
+div#card img
+{
+    width: 200px;
+    height: 150px;
+}
+
+div#bday_card {
+    padding: 0;
+}
+
+div.upload-form
+{
+    margin-top: 10px;
+    float:left;
+}
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+    .sidebar-nav .navbar .navbar-collapse {
+        padding: 0;
+        max-height: none;
+    }
+    .sidebar-nav .navbar ul {
+        float: none;
+    }
+    .sidebar-nav .navbar ul:not {
+        display: block;
+    }
+    .sidebar-nav .navbar li {
+        float: none;
+        display: block;
+    }
+    .sidebar-nav .navbar li a {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+/*send.php css*/
+#preview img{
+    height: 500px;
+}
+
+div.ui-datepicker{
+    z-index: 2 !important;
+}
+
+#desc
+{
+    word-wrap: break-word;
+}
+
+td
+{
+    word-wrap: break-word;
+}
+
+div#article img
+{
+    float:right;
+    width: 200px;
+}
